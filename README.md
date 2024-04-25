@@ -24,7 +24,22 @@ Leave-One-Out tends to be more optimistic as it predicts values based on availab
 
 In conclusion, Leave-Replicas-Out cross-validation demonstrates better generalization on unseen data compared to Leave-One-Out. This project showcases the importance of selecting appropriate cross-validation techniques for accurate evaluation and generalization of machine learning models, particularly in scenarios involving non-independent data.
 ******************************************************************************************************
+Title: Exploring Water Permeability Patterns in Forestry: Spatial Leave-One-Out Cross-Validation Approach
 
+Description:
+
+This project focuses on predicting water permeability in forestry using a K-nearest neighbor regression model (15NN) with spatial leave-one-out cross-validation. The objective is to understand how prediction performance changes with increasing geographical distance between known and unknown data points. Three data files are provided: input.csv (predictor features), output.csv (water permeability values), and coordinates.csv (geographical coordinates). Tasks include standardizing predictor features, conducting spatial leave-one-out cross-validation with 15NN, and estimating prediction performance across various distance parameters. Results show that as prediction distance increases, the C-index performance metric decreases, indicating enhanced reliability in prediction performance due to the removal of nearby data points during spatial cross-validation. This underscores the importance of spatial analysis in achieving robust and reliable predictions in forestry applications.
+
+Tasks:
+
+Z-score standardize the predictor features.
+Perform spatial leave-one-out cross-validation with a 15NN model, estimating water permeability prediction performance across various distance parameter values (0m to 250m in 10-meter intervals).
+Visualize the results by plotting the C-index (y-axis) against the distance parameter value (x-axis) in a Jupyter Notebook.
+
+Conclusion:
+
+Increasing prediction distance leads to a decrease in C-index performance metric, reflecting a more reliable and robust prediction performance. This occurs as nearby data points are omitted from training data during spatial cross-validation, resulting in less optimistic results and enhanced reliability. Consequently, as the hyperparameter distance increases, more nearby data points are excluded from training data, logically leading to decreased C-index performance, yet more dependable predictions. In summary, prediction performance becomes more robust and reliable as prediction distance increases.
+******************************************************************************************************
 
 
 
